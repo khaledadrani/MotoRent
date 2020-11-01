@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="781.0" prefWidth="980.0" style="-fx-background-color: #2C3033;" styleClass="mainFxmlClass" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRent.AJoutVehiculController">
+   <children>
+      <Pane id="mm" layoutX="699.0" layoutY="166.0" prefHeight="125.0" prefWidth="158.0">
+         <children>
+            <RadioButton fx:id="RBvoiture" layoutX="51.0" layoutY="12.0" mnemonicParsing="false" text="Voiture" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="mm" />
+               </toggleGroup>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="RBcamion" layoutX="51.0" layoutY="89.0" mnemonicParsing="false" text="Camion" textFill="WHITE" toggleGroup="$mm">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="RBbus" layoutX="51.0" layoutY="49.0" mnemonicParsing="false" text="Bus" textFill="WHITE" toggleGroup="$mm">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="22.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../carRent.ajoutvehiculIcon/icons8_People_in_Car_Side_View_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="15.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../carRent.ajoutvehiculIcon/icons8_Double_Decker_Bus_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="15.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../carRent.ajoutvehiculIcon/icons8_Truck_50px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="88.0" layoutY="221.0" text="Matricule" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="291.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Tunisia_48px.png" />
+         </image>
+      </ImageView>
+      <JFXDatePicker fx:id="assurance" defaultColor="TOMATO" layoutX="88.0" layoutY="440.0" prefHeight="31.0" prefWidth="345.0" promptText="Expiration Assurance" />
+      <JFXDatePicker fx:id="visite" defaultColor="TOMATO" layoutX="599.0" layoutY="441.0" prefHeight="31.0" prefWidth="345.0" promptText="Expiration Visite technique " />
+      <Label layoutX="618.0" layoutY="215.0" text="Type" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="699.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_BMW_48px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="748.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Land_Rover_48px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="797.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Toyota_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="845.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Volkswagen_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="886.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Ferrari_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="935.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Ford_48px_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="89.0" layoutY="134.0" prefHeight="35.0" prefWidth="265.0" text="NOUVEAU VEHICULE :" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="89.0" layoutY="171.0" prefHeight="0.0" prefWidth="378.0" />
+      <JFXTextField fx:id="marque" focusColor="#d9d2d2bc" labelFloat="true" layoutX="88.0" layoutY="277.0" prefHeight="39.0" prefWidth="345.0" promptText="Marque">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="modele" focusColor="#d9d2d2bc" labelFloat="true" layoutX="88.0" layoutY="351.0" prefHeight="39.0" prefWidth="345.0" promptText="Modèle">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mat1" focusColor="#d9d2d2bc" labelFloat="true" layoutX="197.0" layoutY="216.0" prefHeight="39.0" prefWidth="81.0" promptText="3 Chiff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mat2" focusColor="#d9d2d2bc" labelFloat="true" layoutX="336.0" layoutY="219.0" prefHeight="39.0" prefWidth="96.0" promptText="4 Chiff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="puissance" focusColor="#d9d2d2bc" labelFloat="true" layoutX="88.0" layoutY="511.0" prefHeight="39.0" prefWidth="345.0" promptText="Puissance Fiscale">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="capacite" focusColor="#d9d2d2bc" labelFloat="true" layoutX="597.0" layoutY="509.0" prefHeight="39.0" prefWidth="345.0" promptText="Capacité (en tonnes)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="nbplace" focusColor="#d9d2d2bc" labelFloat="true" layoutX="87.0" layoutY="587.0" prefHeight="39.0" prefWidth="345.0" promptText="Nb Places">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prixjour" focusColor="#d9d2d2bc" labelFloat="true" layoutX="598.0" layoutY="357.0" prefHeight="39.0" prefWidth="345.0" promptText="Prix \ Jour">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="ajouter" layoutX="801.0" layoutY="677.0" mnemonicParsing="false" onAction="#AjouterAction" prefHeight="39.0" prefWidth="140.0" text="Ajouter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="599.0" layoutY="677.0" mnemonicParsing="false" onAction="#Annuler" prefHeight="35.0" prefWidth="151.0" text="Annuler">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="penalite" focusColor="#d9d2d2bc" labelFloat="true" layoutX="596.0" layoutY="589.0" prefHeight="39.0" prefWidth="345.0" promptText="Penalité/jour">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

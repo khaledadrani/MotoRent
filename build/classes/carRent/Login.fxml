@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="967.0" style="-fx-background-color: #2C3033;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRent.LoginController">
+   <children>
+      <ImageView fitHeight="590.0" fitWidth="536.0" focusTraversable="true" layoutY="1.0" mouseTransparent="true" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@loginicon/Image%20de%20fond_1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="554.0" layoutY="22.0" prefHeight="550.0" prefWidth="394.0" style="-fx-background-color: #FF6347;">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="37.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loginicon/icons8_Encrypt_50px_1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="BValider" layoutX="93.0" layoutY="405.0" onAction="#ChangerScene" prefHeight="42.0" prefWidth="271.0" ripplerFill="#1fe07c" style="-fx-background-color: #2C3033;" text="VALIDER" textFill="#f3794c">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="Tpassword" focusColor="#2c3033" layoutX="92.0" layoutY="293.0" prefHeight="31.0" prefWidth="271.0" promptText="Mot de passe" unFocusColor="#2c3033" />
+            <Label layoutX="93.0" layoutY="127.0" text="UTILISATEUR" textFill="#2c3033">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="TUser" focusColor="#2c3033" layoutX="92.0" layoutY="177.0" prefHeight="31.0" prefWidth="271.0" promptText="Nom Utilisateur" unFocusColor="#2c3033">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="93.0" layoutY="247.0" text="MOT DE PASSE" textFill="#2c3033">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="37.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loginicon/icons8_Male_User_50px_5.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="Bnouveau" layoutX="92.0" layoutY="472.0" onAction="#Nouveau" prefHeight="25.0" prefWidth="271.0" text="Nouvel utilisateur? Créez un compte" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="LBerror" layoutX="36.0" layoutY="353.0" prefHeight="21.0" prefWidth="362.0" textFill="#ff0202">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <ImageView fx:id="erreur" fitHeight="28.0" fitWidth="26.0" layoutX="8.0" layoutY="351.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loginicon/icons8_Error_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="143.0" layoutY="337.0" prefHeight="72.0" prefWidth="302.0" text="WELCOME TO CAR RENT" textFill="#ffe1e1">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="408.0" text="Agence de location de tous types de vehicues : &#10;Voitures,camions et vehicules de transport ,des bus" textFill="#949292" />
+      <ImageView fitHeight="192.0" fitWidth="204.0" layoutX="114.0" layoutY="134.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

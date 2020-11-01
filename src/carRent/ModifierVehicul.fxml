@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="781.0" prefWidth="980.0" style="-fx-background-color: #2A2E31;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRent.ModifierVehiculController">
+   <children>
+      <Label layoutX="89.0" layoutY="134.0" prefHeight="17.0" prefWidth="236.0" text="MODIFIER VEHICULE :" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="89.0" layoutY="171.0" prefHeight="0.0" prefWidth="378.0" />
+      <Pane fx:id="p" layoutY="292.0" opacity="0.0" prefHeight="489.0" prefWidth="981.0">
+         <children>
+            <Button layoutX="553.0" layoutY="397.0" mnemonicParsing="false" onAction="#Annuler" prefHeight="35.0" prefWidth="151.0" text="Annuler">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <JFXDatePicker fx:id="assurance" defaultColor="TOMATO" layoutX="91.0" layoutY="313.0" prefHeight="39.0" prefWidth="338.0" promptText="Expiration Assurance" />
+            <JFXTextField fx:id="prixjour" focusColor="#d9d2d2c6" labelFloat="true" layoutX="551.0" layoutY="237.0" prefHeight="39.0" prefWidth="326.0" promptText="Prix \ Jour">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="puissance" focusColor="#dbd3d3b5" labelFloat="true" layoutX="95.0" layoutY="156.0" prefHeight="42.0" prefWidth="326.0" promptText="Puissance Fiscale">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="marque" focusColor="#d9d2d2bc" labelFloat="true" layoutX="95.0" layoutY="90.0" prefHeight="39.0" prefWidth="326.0" promptText="Marque">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="capacite" focusColor="#d9d2d2c6" labelFloat="true" layoutX="552.0" layoutY="160.0" prefHeight="39.0" prefWidth="326.0" promptText="Capacité">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nbplace" focusColor="#d9d2d2bc" labelFloat="true" layoutX="94.0" layoutY="235.0" prefHeight="39.0" prefWidth="326.0" promptText="Nb places">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="98.0" layoutY="19.0" prefHeight="35.0" prefWidth="281.0" text="Nouvelles Informations :" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="modele" focusColor="#d9d2d2bc" labelFloat="true" layoutX="550.0" layoutY="93.0" prefHeight="39.0" prefWidth="326.0" promptText="Modèle">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="visite" defaultColor="TOMATO" layoutX="552.0" layoutY="316.0" prefHeight="31.0" prefWidth="345.0" promptText="Expiration Visite technique " />
+            <JFXTextField fx:id="penalite" focusColor="#d9d2d2bc" labelFloat="true" layoutX="88.0" layoutY="384.0" prefHeight="39.0" prefWidth="345.0" promptText="Penalité/jour">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Button layoutX="760.0" layoutY="395.0" mnemonicParsing="false" onAction="#modifierVehicule" prefHeight="39.0" prefWidth="140.0" text="Modifier">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="97.0" layoutY="234.0" prefHeight="35.0" prefWidth="326.0" text="Matricul de vehicule à modifier :" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="586.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../carRent.ajoutvehiculIcon/icons8_Tunisia_48px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="Tmat1" focusColor="#d9d2d2bc" labelFloat="true" layoutX="478.0" layoutY="230.0" prefHeight="39.0" prefWidth="81.0" promptText="3 Chiff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Tmat2" focusColor="#d9d2d2bc" labelFloat="true" layoutX="649.0" layoutY="234.0" prefHeight="39.0" prefWidth="123.0" promptText="4 Chiff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="chercher" layoutX="814.0" layoutY="237.0" mnemonicParsing="false" onAction="#AffichVehicul" prefHeight="35.0" prefWidth="125.0" text="Chercher">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

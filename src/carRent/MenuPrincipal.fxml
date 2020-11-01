@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="878.0" prefWidth="1285.0" style="-fx-background-color: #2C3033;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRent.MenuPrincipalController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="97.0" prefHeight="781.0" prefWidth="316.0" style="-fx-background-color: #FF6347;">
+         <children>
+            <JFXButton fx:id="BClient" defaultButton="true" layoutX="-60.0" layoutY="196.0" onAction="#hanleBClientAction" prefHeight="78.0" prefWidth="379.0" text=" MENU CLIENTS" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MenuPrincipalIcon/icons8_Queue_50px.png" />
+                     </image></ImageView>
+               </graphic>
+            
+            </JFXButton>
+            <JFXButton fx:id="BVehicule" defaultButton="true" layoutX="-37.0" layoutY="364.0" onAction="#handleBVehiculonAction" prefHeight="78.0" prefWidth="359.0" text=" MENU VEHICULES" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MenuPrincipalIcon/icons8_Traffic_Jam_50px.png" />
+                     </image></ImageView>
+               </graphic>
+            
+            </JFXButton>
+            <JFXButton fx:id="BReservation" defaultButton="true" layoutX="3.0" layoutY="277.0" onAction="#handleBReservationAction" prefHeight="85.0" prefWidth="318.0" text=" MENU RESERVATIONS" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MenuPrincipalIcon/icons8_Agreement_50px.png" />
+                     </image></ImageView>
+               </graphic>
+             
+            </JFXButton>
+            <AnchorPane prefHeight="78.0" prefWidth="322.0" style="-fx-background-color: #050607;">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="33.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MenuPrincipalIcon/icons8_List_52px.png" />
+                     </image></ImageView>
+                  <Label layoutX="75.0" layoutY="22.0" text="MENU PRINCIPAL" textFill="#d6dfe6">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="BEmployee" defaultButton="true" layoutX="-17.0" layoutY="108.0" onAction="#handleBemployeAction" prefHeight="85.0" prefWidth="336.0" text=" MENU EMPLOYEES " textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MenuPrincipalIcon/icons8_Management_50px_1.png" />
+                     </image></ImageView>
+               </graphic>
+            
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" prefHeight="96.0" prefWidth="1301.0" style="-fx-background-color: #D6DFE6;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="1115.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Shutdown_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="62.0" layoutX="660.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Male_User_50px_6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="373.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="78.0" fitWidth="89.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Picture1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="106.0" layoutY="20.0" text="Car Rent" textFill="#f3794c">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="49.0" text="Agence de location des vehicules" textFill="#f3794c" />
+            <JFXButton fx:id="logout" layoutX="1137.0" layoutY="28.0" onAction="#LogOutOnAction" text="Deconnexion" textFill="#e82626">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="nomemp" layoutX="813.0" layoutY="35.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="729.0" layoutY="35.0" text="Bonjour">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Pane fx:id="MenuClient" layoutX="376.0" layoutY="158.0" opacity="0.0" prefHeight="246.0" prefWidth="275.0">
+         <children>
+            <JFXButton fx:id="BAjoutClient" layoutX="62.0" layoutY="12.0" onAction="#handleBAjoutClientAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Ajouter un Client">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BModifierClient" layoutX="62.0" layoutY="69.0" onAction="#handleBModifierClientAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Modifier un Client">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BafficherClient" layoutX="62.0" layoutY="127.0" onAction="#handleBAfficherClientAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Afficher un Client">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BSupprimerClient" layoutX="61.0" layoutY="185.0" onAction="#handleBSupprimerClientAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Supprimer un Client">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="64.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Add_User_Group_Man_Man_50px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="17.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Admin_Settings_Male_50px_3.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="17.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Find_User_Male_50px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="17.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Remove_User_Group_Man_Man_50px_1.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="MenuReservation" layoutX="651.0" layoutY="151.0" opacity="0.0" prefHeight="246.0" prefWidth="275.0">
+         <children>
+            <JFXButton fx:id="BajouterReservation" layoutX="53.0" layoutY="15.0" onAction="#handleBAjouterReservationAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Ajouter une reservation">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BModifierReservation" layoutX="53.0" layoutY="72.0" onAction="#handleBModifierReservationAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Modifier une reservation">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BAfficherReservation" layoutX="53.0" layoutY="128.0" onAction="#handleBAfficherReservationAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Afficher un reservation">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BSupprimerReservation" layoutX="53.0" layoutY="183.0" onAction="#handleBSupprimerReservationAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Supprimer une reservation">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="64.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Add_Property_50px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Edit_Property_50px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Search_Property_50px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Delete_Document_50px.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="MenuEmploye" layoutX="933.0" layoutY="143.0" opacity="0.0" prefHeight="246.0" prefWidth="275.0">
+         <children>
+            <JFXButton fx:id="BModifierEmployee" layoutX="55.0" layoutY="68.0" onAction="#handleBModifierEmployeeAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Modifier un Employee">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BAfficherEmployee" layoutX="57.0" layoutY="126.0" onAction="#handleBAfficherEmployeeAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Afficher un Employee">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BSupprimerEmployee" layoutX="57.0" layoutY="182.0" onAction="#handleBSupprimerEmployeeAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Supprimer un Employee">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="13.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Admin_Settings_Male_50px_2.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="13.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_ID_Verified_50px.png" />
+               </image></ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="13.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/icons8_Remove_Administrator_50px.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneVehicul" layoutX="620.0" layoutY="413.0" opacity="0.0" prefHeight="246.0" prefWidth="275.0">
+         <children>
+            <JFXButton fx:id="BAjouterVehicule" layoutX="60.0" layoutY="12.0" onAction="#handleBAjouterVehiculeAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Ajouter un Vehicule">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BModifierVehicule" layoutX="61.0" layoutY="69.0" onAction="#handleBModifierVehiculAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Modifier un Vehicule">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BAfficherVehicule" layoutX="60.0" layoutY="127.0" onAction="#handleBAfficherVehiculeAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Afficher un Vehicule">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BSupprimerVehicule" layoutX="61.0" layoutY="185.0" onAction="#handleBSupprimerVehiculeAction" prefHeight="42.0" prefWidth="207.0" style="-fx-border-color: #2C3033;" text="Supprimer un Vehicule">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/65404-200.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="21.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/1-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="21.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/img_211019.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="21.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MenuPrincipalIcon/65405-200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="contenu" layoutX="321.0" layoutY="97.0" prefHeight="781.0" prefWidth="980.0">
+         <children>
+            <Pane layoutX="36.0" layoutY="535.0" prefHeight="216.0" prefWidth="930.0">
+               <children>
+                  <Pane layoutX="22.0" layoutY="47.0" prefHeight="155.0" prefWidth="887.0" style="-fx-border-color: #FF6347 #FF6347; -fx-border-radius: 4;" />
+                  <Label layoutX="72.0" layoutY="10.0" text="Notifications" textFill="TOMATO" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="42.0" layoutX="24.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MenuPrincipalIcon/icons8_Alarm_50px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="imagePane" layoutX="140.0" layoutY="53.0" prefHeight="467.0" prefWidth="700.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

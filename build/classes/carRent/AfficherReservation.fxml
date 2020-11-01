@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="781.0" prefWidth="980.0" style="-fx-background-color: #2A2E31;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRent.AfficherReservationController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="39.0" layoutY="24.0" prefHeight="35.0" prefWidth="284.0" text="LISTE DES RESERVATION:" textFill="#d6dfe6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="39.0" layoutY="58.0" prefHeight="6.0" prefWidth="276.0" />
+      <TextField layoutX="352.0" layoutY="29.0" prefHeight="25.0" prefWidth="452.0" promptText="Saisir Id Reservation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="834.0" layoutY="29.0" mnemonicParsing="false" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="747.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="&lt;Avant" />
+      <Button layoutX="890.0" layoutY="747.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="après&gt;" />
+      <TableView fx:id="table" layoutY="95.0" prefHeight="532.0" prefWidth="980.0" style="-fx-background-color: #2A2E31;">
+         <columns>
+            <TableColumn fx:id="col_id_res" minWidth="20.0" prefWidth="122.5" text="Id Reservation" />
+            <TableColumn fx:id="col_id_client" prefWidth="122.5" text="Id Client" />
+            <TableColumn fx:id="col_matricule" prefWidth="122.5" text="Matricule " />
+            <TableColumn fx:id="col_date_debut" prefWidth="122.5" text="Date Debut" />
+            <TableColumn fx:id="col_date_fin" prefWidth="122.5" text="Date Fin" />
+            <TableColumn fx:id="col_date_retour" prefWidth="122.5" text="Date Retour" />
+            <TableColumn fx:id="col_cautionnement" prefWidth="122.5" text="Cautionnement" />
+            <TableColumn fx:id="col_prix_final" prefWidth="122.5" text="Prix Total" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
